@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d0b">
+  <meta name="description" content="Prototype game lịch sử tương tác về hành trình hình thành tư tưởng Hồ Chí Minh.">
+  <title>Hành trình tìm đường — Prototype HCM202</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#game">Bỏ qua đến nội dung chính</a>
+  <header class="topbar">
+    <button class="brand" type="button" data-action="home" aria-label="Về màn hình đầu">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span><b>Hành trình tìm đường</b><small>Prototype HCM202</small></span>
+    </button>
+    <div class="progress-wrap" aria-label="Tiến độ hành trình">
+      <div class="progress-meta"><span id="chapterLabel">Mở đầu</span><span id="progressText">0 / 6 chặng</span></div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+    </div>
+    <button class="icon-button" type="button" data-action="sources" aria-haspopup="dialog">Nguồn tư liệu</button>
+  </header>
+
+  <main id="game" tabindex="-1">
+    <noscript>Bạn cần bật JavaScript để chơi prototype này.</noscript>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="sourcesDialog" class="modal">
+    <div class="modal-head"><div><span class="eyebrow">Đối chiếu nội dung</span><h2>Nguồn tư liệu & hình ảnh</h2></div><button class="close-button" type="button" data-action="close-modal" aria-label="Đóng">×</button></div>
+    <div class="modal-body sources-list">
+      <p>Prototype dùng nội dung HCM202 do nhóm cung cấp làm khung chính. Thông tin ở các nhánh rẽ được bổ sung để giải thích bối cảnh, đóng góp và giới hạn — không dùng để phán xét giản lược các phong trào yêu nước.</p>
+      <ol>
+        <li><a href="https://baonghean.vn/chang-thanh-nien-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc-10274409.html" target="_blank" rel="noreferrer">Báo Nghệ An — Nguyễn Tất Thành ra đi tìm đường cứu nước</a></li>
+        <li><a href="https://usvietnam.uoregon.edu/en/a-republican-moment-in-the-study-of-modern-vietnam/" target="_blank" rel="noreferrer">University of Oregon — Phan Châu Trinh và tư tưởng cộng hòa</a></li>
+        <li><a href="https://danviet.vn/khoi-nghia-chong-phap-lon-nhat-keo-dai-nhat-la-cuoc-khoi-nghia-nao-do-ai-lanh-dao-20230405232027763-d1085660.html" target="_blank" rel="noreferrer">Dân Việt — Khởi nghĩa Yên Thế và Hoàng Hoa Thám</a></li>
+        <li><a href="https://docsteach.org/document/ho-chi-minh-lansing/" target="_blank" rel="noreferrer">U.S. National Archives — Yêu sách của nhân dân An Nam, 1919</a></li>
+        <li><a href="https://www.qdnd.vn/da-phuong-tien/longform/ky-2-nguoi-thanh-nien-khong-tuoi-trong-ngoi-nha-bon-khong-661330" target="_blank" rel="noreferrer">Quân đội Nhân dân — Đại hội Tours 1920</a></li>
+        <li><a href="https://congluan.vn/nguyen-ai-quoc-va-mot-so-bai-viet-tren-bao-le-paria-10160630.html" target="_blank" rel="noreferrer">Công luận — Nguyễn Ái Quốc và báo Le Paria</a></li>
+        <li><a href="https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/book/v-i-lenin/tac-pham/lenin-toan-tap-tap-41-68" target="_blank" rel="noreferrer">Tư liệu Văn kiện Đảng — Lênin toàn tập, tập 41</a></li>
+      </ol>
+      <p class="fineprint">Ảnh minh họa là ảnh tư liệu có sẵn từ các nguồn liên kết; không dùng ảnh tạo sinh.</p>
+    </div>
+  </dialog>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+dist
+out
+.next
+node_modules
+public
+package-lock.json
+test-results
+playwright-report
+README_CODEX.md
