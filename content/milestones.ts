@@ -15,7 +15,7 @@ export const preparationMilestones = [
   },
   {
     year: '1927',
-    title: 'Đường Kách Mệnh',
+    title: 'Đường Cách Mệnh',
     description:
       'Hệ thống hóa bài giảng về tư cách, tổ chức và phương pháp của người cách mạng.',
   },
