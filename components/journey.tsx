@@ -8,6 +8,7 @@ import { chapterIndex } from '../lib/game-state';
 import { GameProvider, useGame } from './game-provider';
 import { DocumentaryImage } from './documentary-image';
 import { SourcesDialog } from './sources-dialog';
+import { AiDisclosureDialog } from './ai-disclosure-dialog';
 import { PathsScreen, BranchScreen, ConvergeScreen } from './branch-screens';
 import { ChapterScreen } from './chapter-screen';
 import { BuilderScreen, PreparationReveal } from './builder-screen';
@@ -202,6 +203,7 @@ function JourneyShell() {
       </main>
       <footer className="site-footer">
         <a href="/timeline/">Dòng thời gian lịch sử</a>
+        <AiDisclosureDialog />
         {game.view !== 'start' && (
           <button
             type="button"

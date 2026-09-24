@@ -1208,6 +1208,37 @@ html {
 .site-footer a {
   padding: 0.7rem 0;
 }
+.footer-link {
+  padding: 0.7rem 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+.footer-link:hover {
+  color: var(--gold-soft);
+}
+.ai-disclosure-content {
+  display: grid;
+  gap: 1.25rem;
+}
+.ai-disclosure-content section {
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+.ai-disclosure-content h3 {
+  margin-bottom: 0.55rem;
+  color: var(--gold-soft);
+}
+.ai-disclosure-content p {
+  margin: 0;
+  color: var(--muted);
+}
 .section-title {
   font-size: 2rem;
   margin: 3rem 0 1.5rem;
